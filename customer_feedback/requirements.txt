@@ -1,0 +1,21 @@
+# Model
+transformers
+torch --index-url https://download.pytorch.org/whl/cu121
+sentencepiece
+scikit-learn
+pandas
+numpy
+
+# NLP Vietnamese
+underthesea
+
+# Streamlit Demo
+streamlit
+
+# Preprocess Data
+regex
+unidecode
+
+# Show Up
+matplotlib
+seaborn
