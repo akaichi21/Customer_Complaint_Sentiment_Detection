@@ -4,20 +4,18 @@
 ### Dữ liệu thu thập được sẽ gồm 3 thành phần chính: text (Phản hồi của khách hàng), complaint_type (Loại phản hồi), sentiment (Cảm xúc của loại phản hồi). Toàn bộ dữ liệu trong dự án này đều được thu thập hoặc đã được biến tấu lại trên phần "Bình luận" trong các sản phẩm của Shop "BossLover" mà tôi đang làm việc tại đó.
 
 ## II. Kết Quả Đạt Được
-###1.
+### 1.
 ![img.png](img.png)
-###2.
+### 2.
 ![img_1.png](img_1.png)
-###3.
+### 3.
 ![img_2.png](img_2.png)
-###4.
+### 4.
 ![img_3.png](img_3.png)
-###5.
+### 5.
 ![img_4.png](img_4.png)
-###6.
+### 6.
 ![img_5.png](img_5.png)
-###7.
-
 
 ## III. Công Nghệ Sử Dụng Trong Dự Án
 ### 1. Ngôn ngữ chính: Python
