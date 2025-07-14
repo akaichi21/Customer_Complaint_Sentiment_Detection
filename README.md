@@ -12,6 +12,12 @@
 ![img_2.png](img_2.png)
 ###4.
 ![img_3.png](img_3.png)
+###5.
+![img_4.png](img_4.png)
+###6.
+![img_5.png](img_5.png)
+###7.
+
 
 ## III. Công Nghệ Sử Dụng Trong Dự Án
 ### 1. Ngôn ngữ chính: Python

@@ -83,22 +83,26 @@ emoji_map = {
     "Hài lòng": "😄"
 }
 
-st.set_page_config(page_title="Classification Customer Complaint & Sentiment", layout="centered")
-st.markdown("<h2 style='text-align:center;'> ~ Boss Lover ~ Classification Customer Complaint & Sentiment</h2>", unsafe_allow_html=True)
-st.markdown("<h4 style='text-align:center;'> Áp dụng cho sản phẩm <span style='color:#ff6600;'>chai lọ</span> tại Shop Boss Lover (Shopee)</h4>", unsafe_allow_html=True)
+st.set_page_config(
+    page_title="Classification Customer Complaint & Sentiment",
+    layout="wide",
+    initial_sidebar_state="expanded",
+)
+st.markdown("<h2 style='text-align:center;'> <span style='color:#ff6600;'>Boss Lover</span> - Classification Customer Complaint & Sentiment</h2>", unsafe_allow_html=True)
+st.markdown("<h4 style='text-align:center;'> Áp dụng cho các sản phẩm <span style='color:#ff6600;'>chai lọ</span> tại <span style='color:#ff6600;'>Boss Lover (Shopee)</span></h4>", unsafe_allow_html=True)
 st.markdown("=====")
 
-text_input = st.text_area("📝 Ý kiến đóng góp của bạn về Shop: ", height=150)
+text_input = st.text_area("📝 Phản Hồi Của Bạn Về Các Sản Phẩm Chai Lọ Của Shop: ", height=100)
 
-if st.button("🔍 Dự Đoán"):
+if st.button("🔍 Xác Nhận & Dự Đoán"):
     if text_input.strip() == "":
-        st.warning("⚠️Vui lòng nhập ý kiến của bạn trước khi dự đoán.")
+        st.warning("⚠️Vui Lòng Nhập Ý Kiến Của Bạn Trước Khi Dự Đoán.")
     else:
         complaint, sentiment = predict(text_input)
-        st.success("☑️Dự đoán thành công")
+        st.success("☑️Dự Đoán Thành Công")
 
         st.markdown(f"""
-                <div style='background-color:#f0f2f6;padding:20px;border-radius:10px;margin-top:20px'>
-                    <h4>📌 <b>Loại khiếu nại:</b> <span style='color:#d6336c'>{complaint}</span></h4>
-                    <h4>💬 <b>Cảm xúc khách hàng:</b> <span style='color:#1f77b4'>{sentiment} {emoji_map.get(sentiment, '')}</span></h4>
+                <div style='background-color:#ff6600;padding:20px;border-radius:10px;margin-top:20px'>
+                    <h4>📌 <b>Loại Phản Hồi:</b> <span style='color:#d6336c'>{complaint}</span></h4>
+                    <h4>💬 <b>Cảm Xúc Khách Hàng:</b> <span style='color:#1f77b4'>{sentiment} {emoji_map.get(sentiment, '')}</span></h4>
                 </div>""", unsafe_allow_html=True)
